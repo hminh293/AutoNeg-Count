@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Dữ liệu / trọng số / kết quả nặng
+data/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+*.joblib
+results/**
+!results/.gitkeep
+!results/tables/
+!results/tables/*.md
+
+# Hệ điều hành / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
+
+# Modal / bí mật
+.env
+*.secret

@@ -1,0 +1,3 @@
+method: o1
+dataset: fsc147_val
+cpe: {enabled: true}

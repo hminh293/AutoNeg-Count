@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoneg"
+version = "0.1.0"
+description = "AutoNeg-Count: giảm đếm nhầm trong zero-shot counting trên nền CountGD++"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "scikit-learn", "pandas", "pyyaml"]
+
+[tool.setuptools.packages.find]
+include = ["autoneg*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "gpu: cần GPU + CountGD++ + checkpoint (bỏ qua tự động nếu không có)",
+]
+addopts = "-ra"

@@ -1,0 +1,5 @@
+method: o4
+dataset: fsc147_val
+cpe: {enabled: true}
+anm: {enabled: true}
+thr: {mode: otsu}

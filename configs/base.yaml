@@ -1,0 +1,23 @@
+# Giá trị mặc định cho MỌI thí nghiệm. File thí nghiệm chỉ ghi phần khác.
+seed: 42
+dataset: fsc147_val
+method: b2
+pass1: {tau_low: 0.15, N: 30, n_top: 50, min_score: 0.10}
+cpe:
+  enabled: false          # false = baseline top-m theo điểm (B2)
+  cluster: spectral       # none | spectral | kmeans_cos
+  criterion: score_size   # score_size | size_only (cụm đông nhất, kiểu CountSE/CountZES)
+  alpha: 0.5
+  m: 3
+  exemplar_mode: topm     # topm | medoid | mean_token
+anm:
+  enabled: false
+  K_neg: 2
+  m_neg: 2
+  min_cluster: 2
+  neg_score_min: 0.20
+  delta: 0.30
+  neg_text: placeholder   # empty | placeholder | confuser_llm | oracle
+thr: {mode: fixed, tau: 0.23}   # fixed | otsu | valley
+verifier: {enabled: false}
+two_pass: true            # false = B1 (chỉ lượt 1)

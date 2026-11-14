@@ -1,0 +1,13 @@
+diff --git a/models/GroundingDINO/ms_deform_attn.py b/models/GroundingDINO/ms_deform_attn.py
+index 9d0877d..e9dcb75 100644
+--- a/models/GroundingDINO/ms_deform_attn.py
++++ b/models/GroundingDINO/ms_deform_attn.py
+@@ -328,7 +328,7 @@ class MultiScaleDeformableAttention(nn.Module):
+                 )
+             )
+     
+-        if torch.cuda.is_available() and value.is_cuda:
++        if torch.cuda.is_available() and value.is_cuda and '_C' in globals():  # fallback PyTorch khi khong build duoc CUDA op
+             halffloat = False
+             if value.dtype == torch.float16:
+                 halffloat = True

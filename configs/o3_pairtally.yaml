@@ -1,0 +1,4 @@
+method: o3
+dataset: pairtally
+cpe: {enabled: true}
+anm: {enabled: true}

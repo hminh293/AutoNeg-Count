@@ -1,0 +1,18 @@
+# Môi trường CountGD++ (GPU). torch cài riêng theo CUDA của máy (Colab/Kaggle có sẵn, cần < 2.6).
+# Sau khi chạy được: pip freeze > environment/freeze_countgdpp_<may>.txt
+transformers==4.39.1
+numpy==1.26.4
+timm
+addict
+yapf==0.40.1
+pycocotools
+opencv-python-headless
+scipy
+scikit-learn
+pandas
+pyyaml
+termcolor
+colorlog
+gdown
+tqdm
+pytest

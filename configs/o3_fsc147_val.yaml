@@ -1,0 +1,4 @@
+method: o3
+dataset: fsc147_val
+cpe: {enabled: true}
+anm: {enabled: true}

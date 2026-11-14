@@ -1,0 +1,5 @@
+# Môi trường CountSE — TIẾN TRÌNH RIÊNG (trùng tên gói với CountGD++).
+# requirements.txt gốc của CountSE lưu UTF-16: chuyển UTF-8 trước khi pip install -r.
+# Tham khảo third_party/CountSE/requirements.txt; ghim transformers==4.39.1, numpy==1.26.4.
+transformers==4.39.1
+numpy==1.26.4

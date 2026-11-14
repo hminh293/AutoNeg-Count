@@ -1,0 +1,6 @@
+[submodule "third_party/CountGDPlusPlus"]
+	path = third_party/CountGDPlusPlus
+	url = https://github.com/niki-amini-naieni/CountGDPlusPlus.git
+[submodule "third_party/CountSE"]
+	path = third_party/CountSE
+	url = https://github.com/pppppz22/CountSE.git
