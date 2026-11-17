@@ -1,4 +1,4 @@
-# Zero-shot counting — AutoNeg-Count
+# AutoNeg-Count — giảm đếm nhầm trong zero-shot counting
 
 Đồ án môn **CS331 – Thị giác máy tính nâng cao**: *hạn chế đếm nhầm trong đếm vật zero-shot*.
 
@@ -17,7 +17,7 @@
 ## Cấu trúc
 
 ```
-Zero-shot-counting/
+AutoNeg-Count/
 ├── autoneg/                 # thư viện chính (import autoneg)
 │   ├── types.py             # HỢP ĐỒNG dữ liệu giữa các module (CountSample, Candidates, PosSelection…)
 │   ├── paths.py config.py io.py
@@ -51,7 +51,7 @@ Zero-shot-counting/
 ### Máy cá nhân (không GPU) — viết code M1/M2/M3, chạy test
 ```bash
 git clone --recurse-submodules <url-repo>
-cd Zero-shot-counting
+cd AutoNeg-Count
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r environment/requirements_cpu.txt
 pip install -e .

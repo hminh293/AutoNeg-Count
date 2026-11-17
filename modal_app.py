@@ -7,8 +7,8 @@ Debug: T4/L4. Chạy lớn: A100/L40S. Ngân sách tổng $60 — dừng nếu t
 """
 import modal
 
-app = modal.App("zero-shot-counting")
-vol = modal.Volume.from_name("zsc-data", create_if_missing=True)   # checkpoints + datasets + cache
+app = modal.App("autoneg-count")
+vol = modal.Volume.from_name("autoneg-data", create_if_missing=True)   # checkpoints + datasets + cache
 image = (
     modal.Image.debian_slim(python_version="3.10")
     .apt_install("git", "libgl1")
