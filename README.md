@@ -1,5 +1,7 @@
 # AutoNeg-Count — giảm đếm nhầm trong zero-shot counting
 
+[![tests](https://github.com/hminh293/AutoNeg-Count/actions/workflows/tests.yml/badge.svg)](https://github.com/hminh293/AutoNeg-Count/actions/workflows/tests.yml)
+
 Đồ án môn **CS331 – Thị giác máy tính nâng cao**: *hạn chế đếm nhầm trong đếm vật zero-shot*.
 
 Ý tưởng (tên tạm **AutoNeg-Count**): chạy trên nền **CountGD++** lúc suy luận, không huấn luyện lại mô hình lớn:
